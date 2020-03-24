@@ -11,6 +11,7 @@ import {
   Logos,
   Cbs,
   Recorp,
+  Hr,
   FooterColumns,
   IconBox,
   Icon
@@ -22,6 +23,7 @@ const Footer = () => (
   <FooterContainer className='section'>
     <div className='has-text-centered'>
       <div className='columns is-mobile is-centered is-multiline'>
+
         <div className='column is-10-tablet is-12-mobile'>
           <p className='has-text-white is-size-7'>Las imágenes contenidas en esta web fueron elaboradas con fines ilustrativos, pudiendo tener variaciones, por lo que no constituyen una representación exacta de la realidad. Su único objetivo es mostrar una caracterización general del proyecto y no cada uno de sus detalles. Las casas se entregan sin terrazas, sin pavimento de estacionamiento y sin pérgolas. Al momento de efectuar la compra, verifique las especificaciones técnicas y características definitivas de su casa, que podrán experimentar variaciones durante el desarrollo del proyecto.</p>
         </div>
@@ -36,6 +38,7 @@ const Footer = () => (
             </div>
 
             <div className='column is-12-mobile is-12-tablet is-10-desktop has-text-white-ter'>
+              <Hr />
               <FooterColumns className='columns is-multiline is-mobile'>
                 <div className='column is-3-tablet is-12-mobile has-text-left-tablet is-size-7'>
                   <IconBox>

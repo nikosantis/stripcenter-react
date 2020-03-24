@@ -42,6 +42,10 @@ export const FooterColumns = styled.div`
   padding-top: 10px;
 `
 
+export const Hr = styled.hr`
+  height: 1px;
+`
+
 export const IconBox = styled.div`
   display: flex;
   justify-content: center;

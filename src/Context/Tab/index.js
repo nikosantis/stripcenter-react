@@ -4,6 +4,7 @@ export const TabContext = createContext()
 
 const Provider = ({ children }) => {
   const [activeTab, setActiveTab] = useState('1')
+  const [dataTab, setDataTab] = useState('')
 
   const changeActiveTab = (number) => {
     setActiveTab(number)
@@ -13,6 +14,10 @@ const Provider = ({ children }) => {
     activeTab,
     changeTab: (number) => {
       changeActiveTab(number)
+    },
+    dataTab,
+    changeDataTab: (data) => {
+      setDataTab(data)
     }
   }
 

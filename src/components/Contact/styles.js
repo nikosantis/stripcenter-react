@@ -7,8 +7,8 @@ export const ContactContainer = styled.section`
   position: relative;
   width: 100vw;
 
-  ${MQ.md`
-    height: 1200px;
+  ${MQ.sm`
+    height: 750px;
   `}
 
   ${MQ.lg`
@@ -17,8 +17,20 @@ export const ContactContainer = styled.section`
 `
 
 export const ContactParallax = styled(Parallax)`
-  width: 100%;
-  height: 100%;
+  height: 1300px;
+  position: relative;
+
+  ${MQ.sm`
+    height: 750px;
+  `}
+
+  ${MQ.lg`
+    height: 800px;
+  `}
+
+  & img {
+    object-fit: cover;
+  }
 `
 
 export const Title = styled.h1`
@@ -73,8 +85,10 @@ export const Phones = styled.p`
 
 export const Icons = styled.div`
   justify-content: center;
+  align-items: center;
   ${MQ.md`
     justify-content: start;
+    align-items: left;
   `}
 `
 

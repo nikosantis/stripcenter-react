@@ -4,6 +4,8 @@ import { fonts } from './fonts'
 export const Styles = createGlobalStyle`
   body {
     font-family: ${fonts.mainFont};
+    overflow-x: hidden;
+    position: relative;
   }
 
   a {

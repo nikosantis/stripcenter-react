@@ -24,7 +24,7 @@ export const ContactForm = () => {
     console.log({
       name: name.value,
       company: company.value,
-      phone: phone.vlue,
+      phone: phone.value,
       email: email.value,
       comments: comments.value
     })

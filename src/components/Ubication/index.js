@@ -10,20 +10,22 @@ import {
   Image
 } from './styles'
 
-export const Ubication = () => {
+const Ubication = () => {
   return (
     <TabContextWrapper>
       <Container>
         <section className='section'>
-          <div className='columns is-centered is-mobile is-multiline'>
-            <div className='column is-12-mobile is-10-tablet'>
-              <div className='columns is-mobile is-multiline'>
-                <div className='column is-6-tablet is-12-mobile'>
-                  <h2 className='title is-3 s-title'>Ubicación estratégica en Buin</h2>
-                  <h5 className='subtitle has-text-grey is-5'>Emplazado en un barrio residencial de gran crecimiento habitacional y comercial</h5>
-                </div>
-                <div className='column is-6-tablet is-12-mobile is-relative' id='tabs-with-content'>
-                  <UbicationNavbar />
+          <div className='container'>
+            <div className='columns is-centered is-mobile is-multiline'>
+              <div className='column is-12-mobile is-10-tablet'>
+                <div className='columns is-mobile is-multiline'>
+                  <div className='column is-6-tablet is-12-mobile'>
+                    <h2 className='title is-3 s-title'>Ubicación estratégica en Buin</h2>
+                    <h5 className='subtitle has-text-grey is-5'>Emplazado en un barrio residencial de gran crecimiento habitacional y comercial</h5>
+                  </div>
+                  <div className='column is-6-tablet is-12-mobilgite is-relative' id='tabs-with-content'>
+                    <UbicationNavbar />
+                  </div>
                 </div>
               </div>
             </div>
@@ -40,9 +42,12 @@ export const Ubication = () => {
             frameborder='0'
             style={{ border: '0' }}
             allowfullscreen
+            loading='Loading'
           />
         </Tab>
       </Container>
     </TabContextWrapper>
   )
 }
+
+export default Ubication
