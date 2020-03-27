@@ -10,9 +10,9 @@ import {
 
 const Carousel = ({ id }) => {
   return (
-    <Element name={id}>
-      <ModalContextWrapper>
-        <Section>
+    <Section>
+      <Element name={id}>
+        <ModalContextWrapper>
           <Container className='container'>
             <div className='columns'>
               <div className='column is-12'>
@@ -20,9 +20,9 @@ const Carousel = ({ id }) => {
               </div>
             </div>
           </Container>
-        </Section>
-      </ModalContextWrapper>
-    </Element>
+        </ModalContextWrapper>
+      </Element>
+    </Section>
   )
 }
 

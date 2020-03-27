@@ -22,8 +22,11 @@ export const Button = styled.button`
   border: none;
   background: transparent;
   margin-bottom: 25px;
-  text-align: left;
   cursor: pointer;
+  text-align: center;
+  ${MQ.md`
+    text-align: left;
+  `}
 
   &.active ${Subtitle} {
     border-bottom: 3px solid green;

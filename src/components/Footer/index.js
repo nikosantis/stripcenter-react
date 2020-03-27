@@ -25,7 +25,9 @@ const Footer = () => (
       <div className='columns is-mobile is-centered is-multiline'>
 
         <div className='column is-10-tablet is-12-mobile'>
-          <p className='has-text-white is-size-7'>Las imágenes contenidas en esta web fueron elaboradas con fines ilustrativos, pudiendo tener variaciones, por lo que no constituyen una representación exacta de la realidad. Su único objetivo es mostrar una caracterización general del proyecto y no cada uno de sus detalles. Las casas se entregan sin terrazas, sin pavimento de estacionamiento y sin pérgolas. Al momento de efectuar la compra, verifique las especificaciones técnicas y características definitivas de su casa, que podrán experimentar variaciones durante el desarrollo del proyecto.</p>
+          <p className='has-text-white is-size-7'>
+          Las imágenes utilizadas en esta web han sido elaboradas con ﬁnes ilustrativos, por lo que no constituyen una representación exacta de la realidad, pudiendo sufrir algunas variaciones en relación con la misma. Su único objetivo es mostrar una caracterización general del proyecto y no cada uno de sus detalles. Al momento de efectuar la compra, veriﬁque las especiﬁcaciones técnicas del proyecto y las características deﬁnitivas de las viviendas. Lo anterior se informa en virtud de lo señalado en la Ley 19.472.
+          </p>
         </div>
         <div className='column is-12-tablet is-12-mobile'>
           <div className='columns is-multiline is-mobile is-vcentered is-centered'>

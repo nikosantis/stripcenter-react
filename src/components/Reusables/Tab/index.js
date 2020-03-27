@@ -1,9 +1,6 @@
-import React, { useContext } from 'react'
-import { TabContext } from '../../../Context/Tab'
+import React from 'react'
 import { Content } from './styles'
 
-export const TabContent = ({ id, children }) => {
-  const { activeTab } = useContext(TabContext)
-
-  return activeTab === id && <Content>{children}</Content>
-}
+export const TabContent = ({ children }) => (
+  <Content>{children}</Content>
+)

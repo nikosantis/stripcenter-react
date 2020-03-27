@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { TabContext } from '../../Context/Tab'
 import {
   Nav,
@@ -8,27 +8,28 @@ import {
 } from './styles'
 
 export const UbicationNavbar = () => {
-  const { activeTab, changeTab } = useContext(TabContext)
-  const [isActive1, setIsActive1] = useState(true)
-  const [isActive2, setIsActive2] = useState(false)
+  const {
+    isActive1,
+    isActive2,
+    changeActive1,
+    changeActive2
+  } = useContext(TabContext)
 
   const handleClick1 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    changeTab('1')
+    changeActive1(true)
+    changeActive2(false)
   }
 
   const handleClick2 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    changeTab('2')
+    changeActive1(false)
+    changeActive2(true)
   }
   return (
     <Nav>
       <Ul>
         <Li
           className={`is-transparent ${
-              activeTab === '1'
+              isActive1
               ? 'is-active'
               : ''
           }`}
@@ -41,7 +42,7 @@ export const UbicationNavbar = () => {
         </Li>
         <Li
           className={`is-transparent ${
-              activeTab === '2'
+            isActive2
               ? 'is-active'
               : ''
           }`}

@@ -5,6 +5,7 @@ import {
   Content,
   Title,
   Subtitle,
+  ImageLogo,
   Icon,
   TextIcon
 } from './styles'
@@ -17,8 +18,8 @@ import { Offices } from '../Icons/Offices'
 import { Parking } from '../Icons/Parking'
 
 const Introduction = ({ id }) => (
-  <Element name={id}>
-    <Section>
+  <Section>
+    <Element name={id}>
       <div className='container'>
         <div className='columns is-multiline is-mobile is-centered'>
           <Content className='column is-11-tablet is-12-mobile'>
@@ -33,11 +34,11 @@ const Introduction = ({ id }) => (
                 <div className='content'>
                   <p>La alta conectividad y facilidad de accesos, son pilares fundamentales en el desarrollo de este nuevo proyecto de CBS.</p>
                   <p>Santiago, Puente Alto y Las Condes son importantes generadores de flujos, lo que se traduce en que el 33,5% de los vehículos que transitan por el sector pertenecen a los grupos ABC1 o C2.</p>
-                  <p>La cercanía a desarrollos futuros de Colegio, Centro Educacional y Estación de Servicios, en pleno barrio residencial de gran crecimiento habitacional, son importantes factores de plusvalía.</p>
+                  <p>El strip center está ubicado en un barrio residencial con gran crecimiento habitacional, cercano a futuros colegios, centros educacionales y estación de servicio. Todo esto lo convierte en un proyecto de gran plusvalía.</p>
                 </div>
               </div>
               <div className='column is-4-tablet is-12-mobile has-text-centered'>
-                <img src={PrincipalImage} alt='Buin Oriente Boulevard | Stripcenter Alto Jahuel' className='first-content--icon' />
+                <ImageLogo src={PrincipalImage} alt='Buin Oriente Boulevard | Stripcenter Alto Jahuel' />
               </div>
             </div>
           </Content>
@@ -79,8 +80,8 @@ const Introduction = ({ id }) => (
           </div>
         </div>
       </div>
-    </Section>
-  </Element>
+    </Element>
+  </Section>
 )
 
 export default Introduction

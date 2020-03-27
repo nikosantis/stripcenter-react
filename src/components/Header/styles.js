@@ -5,9 +5,6 @@ import { Link } from 'react-scroll'
 export const Nav = styled.nav`
   padding-top: 10px;
   background: transparent;
-  /* ${MQ.md`
-    padding: 0;
-  `} */
 `
 
 export const Container = styled.header`
@@ -41,6 +38,8 @@ export const Burger = styled.button`
   margin-right: 25px;
   margin-top: 11px;
   margin-bottom: 11px;
+  background: transparent;
+  border: none;
 
   &.is-active {
     background-color: transparent !important;
@@ -60,6 +59,7 @@ export const NavbarBox = styled.div`
 export const NavButton = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   ${MQ.md`
     margin-left: 20px;
   `}

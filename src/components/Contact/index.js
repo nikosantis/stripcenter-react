@@ -22,8 +22,8 @@ import { Maps } from '../Icons/Maps'
 import { ContactForm } from '../ContactForm'
 
 const Contact = ({ id }) => (
-  <Element name={id}>
-    <ContactContainer>
+  <ContactContainer>
+    <Element name={id}>
       <ContactParallax
         className='section fifth-content parallax-window'
         id='contacto'
@@ -46,14 +46,21 @@ const Contact = ({ id }) => (
                 <div className='columns is-centered'>
                   <div className='column is-12'>
                     <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
-                Dirección:
+                      Dirección:
                     </TitleContent>
                     <Text className='is-size-6 has-text-white'>
                       <a href='#'>Alto Jahuel XXX, Buin</a>
                     </Text>
                     <br />
                     <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
-                Teléfono:
+                      Correo Electrónico:
+                    </TitleContent>
+                    <Text className='is-size-6 has-text-white'>
+                      <a href='mailto:contacto@cbsinmobiliaria.cl'>contacto@cbsinmobiliaria.cl</a>
+                    </Text>
+                    <br />
+                    <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
+                      Teléfono:
                     </TitleContent>
                     <Phones className='is-6 has-text-white has-text-centered-mobile'>
                       <a href='tel:+56232451242'>+562 3245 1242</a>
@@ -118,8 +125,8 @@ const Contact = ({ id }) => (
         <FooterLeft />
         <FooterRight />
       </Footer>
-    </ContactContainer>
-  </Element>
+    </Element>
+  </ContactContainer>
 )
 
 export default Contact

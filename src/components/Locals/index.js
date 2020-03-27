@@ -11,9 +11,9 @@ import {
 
 const Locals = ({ id }) => {
   return (
-    <Element name={id}>
-      <TabContextWrapper>
-        <Container>
+    <Container>
+      <Element name={id}>
+        <TabContextWrapper>
           <div className='container'>
             <div className='columns is-multiline is-centered is-mobile'>
               <div className='column is-10 mb-3'>
@@ -35,9 +35,9 @@ const Locals = ({ id }) => {
               </div>
             </div>
           </div>
-        </Container>
-      </TabContextWrapper>
-    </Element>
+        </TabContextWrapper>
+      </Element>
+    </Container>
   )
 }
 

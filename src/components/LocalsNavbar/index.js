@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { TabContext } from '../../Context/Tab'
 import {
   Li,
@@ -8,56 +8,57 @@ import {
 } from './styles'
 
 export const LocalsNavbar = () => {
-  const { activeTab, changeTab } = useContext(TabContext)
-  const [isActive1, setIsActive1] = useState(true)
-  const [isActive2, setIsActive2] = useState(false)
-  const [isActive3, setIsActive3] = useState(false)
-  const [isActive4, setIsActive4] = useState(false)
-  const [isActive5, setIsActive5] = useState(false)
+  const {
+    isActive1,
+    changeActive1,
+    isActive2,
+    changeActive2,
+    isActive3,
+    changeActive3,
+    isActive4,
+    changeActive4,
+    isActive5,
+    changeActive5
+  } = useContext(TabContext)
 
   const handleClick1 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    setIsActive3(!isActive3)
-    setIsActive4(!isActive4)
-    setIsActive5(!isActive5)
-    changeTab('1')
+    changeActive1(true)
+    changeActive2(false)
+    changeActive3(false)
+    changeActive4(false)
+    changeActive5(false)
   }
 
   const handleClick2 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    setIsActive3(!isActive3)
-    setIsActive4(!isActive4)
-    setIsActive5(!isActive5)
-    changeTab('2')
+    changeActive1(false)
+    changeActive2(true)
+    changeActive3(false)
+    changeActive4(false)
+    changeActive5(false)
   }
 
   const handleClick3 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    setIsActive3(!isActive3)
-    setIsActive4(!isActive4)
-    setIsActive5(!isActive5)
-    changeTab('3')
+    changeActive1(false)
+    changeActive2(false)
+    changeActive3(true)
+    changeActive4(false)
+    changeActive5(false)
   }
 
   const handleClick4 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    setIsActive3(!isActive3)
-    setIsActive4(!isActive4)
-    setIsActive5(!isActive5)
-    changeTab('4')
+    changeActive1(false)
+    changeActive2(false)
+    changeActive3(false)
+    changeActive4(true)
+    changeActive5(false)
   }
 
   const handleClick5 = () => {
-    setIsActive1(!isActive1)
-    setIsActive2(!isActive2)
-    setIsActive3(!isActive3)
-    setIsActive4(!isActive4)
-    setIsActive5(!isActive5)
-    changeTab('5')
+    changeActive1(false)
+    changeActive2(false)
+    changeActive3(false)
+    changeActive4(false)
+    changeActive5(true)
   }
 
   return (
@@ -67,7 +68,7 @@ export const LocalsNavbar = () => {
           <Button
             onClick={handleClick1}
             className={
-              activeTab === '1'
+              isActive1
                 ? 'active'
                 : ''
             }
@@ -86,7 +87,7 @@ export const LocalsNavbar = () => {
           <Button
             onClick={handleClick2}
             className={
-              activeTab === '2'
+              isActive2
                 ? 'active'
                 : ''
             }
@@ -105,7 +106,7 @@ export const LocalsNavbar = () => {
           <Button
             onClick={handleClick3}
             className={
-              activeTab === '3'
+              isActive3
                 ? 'active'
                 : ''
             }
@@ -124,7 +125,7 @@ export const LocalsNavbar = () => {
           <Button
             onClick={handleClick4}
             className={
-              activeTab === '4'
+              isActive4
                 ? 'active'
                 : ''
             }
@@ -143,7 +144,7 @@ export const LocalsNavbar = () => {
           <Button
             onClick={handleClick5}
             className={
-              activeTab === '5'
+              isActive5
                 ? 'active'
                 : ''
             }

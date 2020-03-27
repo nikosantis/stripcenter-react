@@ -30,6 +30,10 @@ export const Subtitle = styled.h2`
   `}
 `
 
+export const ImageLogo = styled.img`
+  width: 55%;
+`
+
 export const Icon = styled.figure`
   margin: auto;
 `

@@ -36,7 +36,6 @@ const Header = (props) => {
   const handleClick = () => {
     setIsActive(!isActive)
   }
-  console.log(props)
 
   return (
     <Container
@@ -102,11 +101,13 @@ const Header = (props) => {
               </NavItem>
 
               <NavButton>
-                <Link to='contacto' spy smooth duration={500}>
-                  <Button>
-                    <strong>Consultar</strong>
-                  </Button>
-                </Link>
+                <div>
+                  <Link to='contacto' spy smooth duration={500}>
+                    <Button>
+                      <strong>Consultar</strong>
+                    </Button>
+                  </Link>
+                </div>
               </NavButton>
             </NavbarBox>
 

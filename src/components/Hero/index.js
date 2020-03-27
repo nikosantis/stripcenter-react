@@ -23,7 +23,7 @@ const properties = {
   arrows: false,
   infinite: true,
   indicators: false,
-  autoplay: false
+  autoplay: true
 }
 
 const Hero = () => (

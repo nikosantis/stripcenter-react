@@ -45,6 +45,7 @@ export const Title = styled.h1`
 
 export const TitleContent = styled.h2`
   text-align: center;
+  margin-bottom: 15px;
 
   ${MQ.lg`
     text-align: left;
@@ -54,7 +55,7 @@ export const TitleContent = styled.h2`
 export const Text = styled.p`
   font-weight: 600;
   line-height: 1.125;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 1rem;
   text-align: center;
 
