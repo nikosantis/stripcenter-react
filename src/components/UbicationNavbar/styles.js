@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MQ } from '../../styles/mq'
 
 export const Nav = styled.nav`
   display: flex;
@@ -26,7 +27,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   font-weight: 700;
   padding: .5em 1em;
-  font-size: 1.25rem;
+  font-size: 1rem;
   background: transparent;
   cursor: pointer;
 
@@ -38,4 +39,8 @@ export const Button = styled.button`
     border: none;
     color: #363636;
   }
+
+  ${MQ.md`
+    font-size: 1.25rem;
+  `}
 `

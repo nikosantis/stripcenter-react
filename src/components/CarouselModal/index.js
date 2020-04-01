@@ -2,6 +2,10 @@ import React, { useContext } from 'react'
 import { ModalContext } from '../../Context/Modal'
 import { Modal } from '../Reusables/Modal'
 
+import {
+  Image
+} from './styles'
+
 export const CarouselModal = ({ dataImage }) => {
   const { isOpen, modalHide } = useContext(ModalContext)
   return (
@@ -11,7 +15,7 @@ export const CarouselModal = ({ dataImage }) => {
     >
       <div className='columns is-multiline'>
         <div className='column is-12'>
-          <img src={dataImage} />
+          <Image src={dataImage} />
         </div>
       </div>
     </Modal>

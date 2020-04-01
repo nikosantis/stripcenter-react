@@ -6,7 +6,8 @@ import { LocalsTab } from '../LocalsTab'
 import {
   Container,
   Title,
-  Flex
+  Flex,
+  NavColumn
 } from './styles'
 
 const Locals = ({ id }) => {
@@ -14,7 +15,7 @@ const Locals = ({ id }) => {
     <Container>
       <Element name={id}>
         <TabContextWrapper>
-          <div className='container'>
+          <div className='container is-fullhd'>
             <div className='columns is-multiline is-centered is-mobile'>
               <div className='column is-10 mb-3'>
                 <Title className='title is-3 s-title has-text-centered'>
@@ -22,11 +23,11 @@ const Locals = ({ id }) => {
                 </Title>
               </div>
 
-              <div className='column is-12-tablet is-10-desktop is-12-mobile'>
+              <div className='column is-12-tablet is-11-desktop is-12-mobile'>
                 <div className='columns'>
-                  <div className='column is-3'>
+                  <NavColumn className='column is-3'>
                     <LocalsNavbar />
-                  </div>
+                  </NavColumn>
 
                   <Flex className='column is-9'>
                     <LocalsTab />

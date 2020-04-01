@@ -3,7 +3,9 @@ import { TabContextWrapper } from '../Reusables/Tab/TabContextWrapper'
 import { UbicationNavbar } from '../UbicationNavbar'
 import { UbicationTab } from '../UbicationTab'
 import {
-  Container
+  Container,
+  Title,
+  Subtitle
 } from './styles'
 
 const Ubication = () => {
@@ -16,8 +18,8 @@ const Ubication = () => {
               <div className='column is-12-mobile is-10-tablet'>
                 <div className='columns is-mobile is-multiline'>
                   <div className='column is-6-tablet is-12-mobile'>
-                    <h2 className='title is-3 s-title'>Ubicación estratégica en Buin</h2>
-                    <h5 className='subtitle has-text-grey is-5'>Emplazado en un barrio residencial de gran crecimiento habitacional y comercial</h5>
+                    <Title className='title is-3 s-title'>Ubicación estratégica en Buin</Title>
+                    <Subtitle className='subtitle has-text-grey is-5'>Emplazado en un barrio residencial de gran crecimiento habitacional y comercial</Subtitle>
                   </div>
                   <div className='column is-6-tablet is-12-mobilgite is-relative' id='tabs-with-content'>
                     <UbicationNavbar />

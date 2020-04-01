@@ -14,7 +14,11 @@ import {
   IconText,
   Footer,
   FooterLeft,
-  FooterRight
+  FooterRight,
+  BoxPhones,
+  Box,
+  BoxTitle,
+  Link
 } from './styles'
 import Image from '../../images/bg-contacto.jpg'
 import { Waze } from '../Icons/Waze'
@@ -46,70 +50,69 @@ const Contact = ({ id }) => (
                 <div className='columns is-centered'>
                   <div className='column is-12'>
                     <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
-                      Dirección:
-                    </TitleContent>
-                    <Text className='is-size-6 has-text-white'>
-                      <a href='#'>Alto Jahuel XXX, Buin</a>
-                    </Text>
-                    <br />
-                    <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
-                      Correo Electrónico:
+                      Correo Electrónico
                     </TitleContent>
                     <Text className='is-size-6 has-text-white'>
                       <a href='mailto:contacto@cbsinmobiliaria.cl'>contacto@cbsinmobiliaria.cl</a>
                     </Text>
                     <br />
                     <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
-                      Teléfono:
+                      Teléfonos
                     </TitleContent>
-                    <Phones className='is-6 has-text-white has-text-centered-mobile'>
-                      <a href='tel:+56232451242'>+562 3245 1242</a>
-                    </Phones>
-                    <Phones className='is-6 has-text-white has-text-centered-mobile'>
-                      <a href='tel:+56232451243'>+562 3245 1243</a>
-                    </Phones>
-                    <Phones className='is-6 has-text-white has-text-centered-mobile'>
-                      <a href='tel:+56993362842'>+569 9336 2842</a>
-                    </Phones>
-                    <Phones className='is-6 has-text-white has-text-centered-mobile'>
-                      <a href='tel:+56984558853'>+569 8455 8853</a>
-                    </Phones>
+
+                    <BoxPhones>
+                      <Box>
+                        <Phones className='is-6 has-text-white has-text-centered-mobile'>
+                          <a href='tel:+56232451242'>+56 9 8455 8853</a>
+                        </Phones>
+                        <Phones className='is-6 has-text-white has-text-centered-mobile'>
+                          <a href='tel:+56232451243'>+56 9 9336 2842</a>
+                        </Phones>
+                        <Phones className='is-6 has-text-white has-text-centered-mobile'>
+                          <a href='tel:+56993362842'>+56 9 7688 1219</a>
+                        </Phones>
+                      </Box>
+
+                    </BoxPhones>
+                    <br />
+                    <TitleContent className='subtitle is-5 is-uppercase has-text-white has-text-weight-semibold'>
+                      Dirección
+                    </TitleContent>
+                    <Text className='is-size-6 has-text-white'>
+                      <a href='#'>Alto Jahuel, Buin</a>
+                    </Text>
                     <br />
                   </div>
                 </div>
-                <Icons className='columns is-multiple is-mobile is-vcentered is-centered-mobile'>
-                  <div className='column is-4'>
-                    <a href='#'>
-                      <IconLayout>
-                        <div>
-                          <Icon className='icon is-large'>
-                            <figure className='image is-32x32'>
-                              <Waze />
-                            </figure>
-                          </Icon>
-                        </div>
-                        <div>
-                          <IconText>Ir Con <br />Waze</IconText>
-                        </div>
-                      </IconLayout>
-                    </a>
-                  </div>
-                  <div className='column is-4-tablet is-6-mobile'>
-                    <a href='#'>
-                      <IconLayout>
-                        <div>
-                          <Icon className='icon is-large'>
-                            <figure className='image is-32x32'>
-                              <Maps />
-                            </figure>
-                          </Icon>
-                        </div>
-                        <div>
-                          <IconText>Ir Con <br />GMaps</IconText>
-                        </div>
-                      </IconLayout>
-                    </a>
-                  </div>
+                <Icons>
+                  <IconLayout>
+                    <Link target='_blank' href='https://www.waze.com/ul?ll=-33.73307970%2C-70.68447200&navigate=yes'>
+                      <div>
+                        <Icon className='icon is-large'>
+                          <figure className='image is-32x32'>
+                            <Waze />
+                          </figure>
+                        </Icon>
+                      </div>
+                      <div>
+                        <IconText>Ir Con Waze</IconText>
+                      </div>
+                    </Link>
+                  </IconLayout>
+                  <IconLayout>
+                    <Link target='_blank' href='https://goo.gl/maps/iUq9z6JwnaakbhJbA'>
+                      <div>
+                        <Icon className='icon is-large'>
+                          <figure className='image is-32x32'>
+                            <Maps />
+                          </figure>
+                        </Icon>
+                      </div>
+                      <div>
+                        <IconText>Ir Con GMaps</IconText>
+                      </div>
+                    </Link>
+                  </IconLayout>
                 </Icons>
               </div>
 

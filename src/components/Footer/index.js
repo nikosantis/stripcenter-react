@@ -7,7 +7,10 @@ import {
 } from 'react-icons/fa'
 import {
   FooterContainer,
+  LogoDesarrolla,
+  LogoComercializa,
   LogoText,
+  Titles,
   Logos,
   Cbs,
   Recorp,
@@ -33,6 +36,10 @@ const Footer = () => (
           <div className='columns is-multiline is-mobile is-vcentered is-centered'>
             <div className='column is-12 footer-bordered'>
               <LogoText className='has-text-white'>Venden:</LogoText>
+              <Titles>
+                <LogoDesarrolla className='has-text-white'>Desarrolla</LogoDesarrolla>
+                <LogoComercializa className='has-text-white'>Comercializa</LogoComercializa>
+              </Titles>
               <Logos>
                 <Cbs src={LogoCbs} />
                 <Recorp src={LogoRecorp} />

@@ -9,46 +9,39 @@ import {
 
 export const UbicationNavbar = () => {
   const {
-    isActive1,
-    isActive2,
-    changeActive1,
-    changeActive2
+    activeTab,
+    changeActiveTab
   } = useContext(TabContext)
 
-  const handleClick1 = () => {
-    changeActive1(true)
-    changeActive2(false)
+  const handleClick = (tab) => {
+    changeActiveTab(tab)
   }
 
-  const handleClick2 = () => {
-    changeActive1(false)
-    changeActive2(true)
-  }
   return (
     <Nav>
       <Ul>
         <Li
           className={`is-transparent ${
-              isActive1
+            activeTab === '1'
               ? 'is-active'
               : ''
           }`}
         >
           <Button
-            onClick={handleClick1}
+            onClick={() => handleClick('1')}
           >
             MAPA DE SERVICIOS
           </Button>
         </Li>
         <Li
           className={`is-transparent ${
-            isActive2
+            activeTab === '2'
               ? 'is-active'
               : ''
           }`}
         >
           <Button
-            onClick={handleClick2}
+            onClick={() => handleClick('2')}
           >
             MAPA GOOGLE MAPS
           </Button>

@@ -11,11 +11,37 @@ export const LogoText = styled.p`
   margin-bottom: 10px!important;
 `
 
+export const Titles = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+`
+
 export const Logos = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+`
+
+export const LogoDesarrolla = styled.p`
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 100px;
+
+  ${MQ.md`
+    width: 100px;
+  `}
+`
+
+export const LogoComercializa = styled.p`
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 150px;
+  ${MQ.md`
+    width: 130px;
+  `}
 `
 
 export const Cbs = styled.img`

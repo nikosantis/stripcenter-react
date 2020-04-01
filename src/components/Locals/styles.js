@@ -14,3 +14,9 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
 `
+
+export const NavColumn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

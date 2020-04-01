@@ -4,8 +4,8 @@ import {
   Btn
 } from './styles'
 
-export const SubmitButton = ({ children }) => (
-  <Submit className='button is-danger is-rounded'>
+export const SubmitButton = ({ children, isValid, disabled }) => (
+  <Submit className={`button is-danger is-rounded${isValid ? ' is-disabled' : ''}`} disabled={disabled}>
     {children}
   </Submit>
 )

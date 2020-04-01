@@ -9,56 +9,12 @@ import {
 
 export const LocalsNavbar = () => {
   const {
-    isActive1,
-    changeActive1,
-    isActive2,
-    changeActive2,
-    isActive3,
-    changeActive3,
-    isActive4,
-    changeActive4,
-    isActive5,
-    changeActive5
+    activeTab,
+    changeActiveTab
   } = useContext(TabContext)
 
-  const handleClick1 = () => {
-    changeActive1(true)
-    changeActive2(false)
-    changeActive3(false)
-    changeActive4(false)
-    changeActive5(false)
-  }
-
-  const handleClick2 = () => {
-    changeActive1(false)
-    changeActive2(true)
-    changeActive3(false)
-    changeActive4(false)
-    changeActive5(false)
-  }
-
-  const handleClick3 = () => {
-    changeActive1(false)
-    changeActive2(false)
-    changeActive3(true)
-    changeActive4(false)
-    changeActive5(false)
-  }
-
-  const handleClick4 = () => {
-    changeActive1(false)
-    changeActive2(false)
-    changeActive3(false)
-    changeActive4(true)
-    changeActive5(false)
-  }
-
-  const handleClick5 = () => {
-    changeActive1(false)
-    changeActive2(false)
-    changeActive3(false)
-    changeActive4(false)
-    changeActive5(true)
+  const handleClick = (tab) => {
+    changeActiveTab(tab)
   }
 
   return (
@@ -66,9 +22,9 @@ export const LocalsNavbar = () => {
       <ul>
         <Li>
           <Button
-            onClick={handleClick1}
+            onClick={() => handleClick('1')}
             className={
-              isActive1
+              activeTab === '1'
                 ? 'active'
                 : ''
             }
@@ -85,9 +41,9 @@ export const LocalsNavbar = () => {
 
         <Li>
           <Button
-            onClick={handleClick2}
+            onClick={() => handleClick('2')}
             className={
-              isActive2
+              activeTab === '2'
                 ? 'active'
                 : ''
             }
@@ -104,9 +60,9 @@ export const LocalsNavbar = () => {
 
         <Li>
           <Button
-            onClick={handleClick3}
+            onClick={() => handleClick('3')}
             className={
-              isActive3
+              activeTab === '3'
                 ? 'active'
                 : ''
             }
@@ -123,9 +79,9 @@ export const LocalsNavbar = () => {
 
         <Li>
           <Button
-            onClick={handleClick4}
+            onClick={() => handleClick('4')}
             className={
-              isActive4
+              activeTab === '4'
                 ? 'active'
                 : ''
             }
@@ -142,9 +98,9 @@ export const LocalsNavbar = () => {
 
         <Li>
           <Button
-            onClick={handleClick5}
+            onClick={() => handleClick('5')}
             className={
-              isActive5
+              activeTab === '5'
                 ? 'active'
                 : ''
             }

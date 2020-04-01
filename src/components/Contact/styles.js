@@ -68,6 +68,23 @@ export const Text = styled.p`
   }
 `
 
+export const BoxPhones = styled.div`
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+`
+
+export const Box = styled.section`
+
+`
+
+export const BoxTitle = styled.h1`
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+`
+
 export const Phones = styled.p`
   font-weight: 600;
   line-height: 1.125;
@@ -85,16 +102,23 @@ export const Phones = styled.p`
 `
 
 export const Icons = styled.div`
-  justify-content: center;
-  align-items: center;
-  ${MQ.md`
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  /* ${MQ.md`
     justify-content: start;
     align-items: left;
-  `}
+  `} */
 `
 
 export const IconLayout = styled.div`
+  width: 100%;
+`
+
+export const Link = styled.a`
+  width: 100%;
   display: flex;
+  align-items: center;
 `
 
 export const Icon = styled.span`

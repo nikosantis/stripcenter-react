@@ -34,10 +34,10 @@ export const Content = styled.section`
   position: relative;
   margin: 0 auto;
   border-radius: 6px;
-  width: 95%;
+  width: 90%;
 
   ${MQ.md`
-    width: 100%;
+    width: 70%;
   `}
 `
 

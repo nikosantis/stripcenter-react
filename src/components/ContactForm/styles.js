@@ -17,6 +17,10 @@ export const Input = styled.input`
   box-shadow: none;
   border-bottom: 1px solid #ffffff;
   color: #ffffff!important;
+
+  &::placeholder {
+    color: #ffffff!important;
+  }
 `
 
 export const Label = styled.label`
