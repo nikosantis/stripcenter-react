@@ -29,23 +29,33 @@ export const LocalsTab = () => {
     <Columns className='columns'>
       <DivTab className='column is-9'>
         <Tab id='1' imageData='Foto 1' activetab={activeTab === '1'}>
-          <Image src={Pisom1} />
+          <figure className='image'>
+            <Image src={Pisom1} />
+          </figure>
         </Tab>
 
         <Tab id='2' imageData='Foto 2' activetab={activeTab === '2'}>
-          <Image src={Piso1} />
+          <figure className='image'>
+            <Image src={Piso1} />
+          </figure>
         </Tab>
 
         <Tab id='3' imageData='Foto 3' activetab={activeTab === '3'}>
-          <Image src={Piso2} />
+          <figure className='image'>
+            <Image src={Piso2} />
+          </figure>
         </Tab>
 
         <Tab id='4' imageData='Foto 4' activetab={activeTab === '4'}>
-          <Image src={Piso3} />
+          <figure className='image'>
+            <Image src={Piso3} />
+          </figure>
         </Tab>
 
         <Tab id='5' imageData='Foto 5' activetab={activeTab === '5'}>
-          <Image src={Piso4} />
+          <figure className='image'>
+            <Image src={Piso4} />
+          </figure>
         </Tab>
 
       </DivTab>

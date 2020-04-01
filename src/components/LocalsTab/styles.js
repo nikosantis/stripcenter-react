@@ -11,6 +11,7 @@ export const DivTab = styled.div`
 
 export const Tab = styled.div`
   display: ${props => props.activetab ? 'flex' : 'none'};
+  position: relative;
 `
 
 export const DivFlex = styled.div`
@@ -33,11 +34,9 @@ export const DivCenter = styled.div`
   `}
 `
 
-export const Figure = styled.figure`
-  width: 100%;
-`
-
 export const Image = styled.img`
   width: 100%;
-  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  box-sizing: border-box;
 `

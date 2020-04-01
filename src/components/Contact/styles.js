@@ -70,8 +70,13 @@ export const Text = styled.p`
 
 export const BoxPhones = styled.div`
   display: flex;
-  width: 60%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: center;
+
+  ${MQ.md`
+    width: 60%;
+    justify-content: space-between;
+  `}
 `
 
 export const Box = styled.section`
@@ -103,12 +108,13 @@ export const Phones = styled.p`
 
 export const Icons = styled.div`
   display: flex;
-  width: 60%;
-  justify-content: space-between;
-  /* ${MQ.md`
-    justify-content: start;
-    align-items: left;
-  `} */
+  width: 100%;
+  justify-content: center;
+
+  ${MQ.md`
+    width: 60%;
+    justify-content: space-between;
+  `}
 `
 
 export const IconLayout = styled.div`
@@ -122,8 +128,11 @@ export const Link = styled.a`
 `
 
 export const Icon = styled.span`
-  margin-right: 10px;
   vertical-align: middle;
+
+  ${MQ.md`
+    margin-right: 10px;
+  `}
 `
 
 export const IconText = styled.span`
